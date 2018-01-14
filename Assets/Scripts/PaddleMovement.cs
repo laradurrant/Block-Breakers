@@ -14,11 +14,15 @@ public class PaddleMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
-		paddlePosition = new Vector3(0f, -6f, 0f);
+
+		paddlePosition = new Vector3(0f, -5.5f, 0f);
 		mousePos = Input.mousePosition.x / Screen.width;
 		paddlePosition.x = mousePos * 19f;
 		this.transform.position = paddlePosition;
+
+		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 0, 19f), -5.5f, 0);
+			
+
 		debugFunctions ();
 
 
