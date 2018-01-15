@@ -33,7 +33,7 @@ public class Ball : MonoBehaviour {
 				float x, y;
 				
 				x = Random.Range(-2f,2f);
-				y = Random.Range(10f,15f);
+				y = Random.Range(9f,10f);
 				
 				rb.velocity = new Vector2 (x, y);
 			
