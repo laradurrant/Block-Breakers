@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaddleMovement : MonoBehaviour {
+public class Paddle : MonoBehaviour {
 
 	Vector3 paddlePosition;
 	float mousePos;
@@ -23,7 +23,7 @@ public class PaddleMovement : MonoBehaviour {
 		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 0, 19f), -5.5f, 0);
 			
 
-		debugFunctions ();
+		//debugFunctions ();
 
 
 	}
