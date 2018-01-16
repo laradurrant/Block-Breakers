@@ -239,6 +239,11 @@ Prefab:
       propertyPath: paddle
       value: 
       objectReference: {fileID: 2144311999}
+    - target: {fileID: 50952044209399310, guid: f99a893412a83934c9307b3867bb61b2,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f99a893412a83934c9307b3867bb61b2, type: 2}
   m_IsPrefabParent: 0

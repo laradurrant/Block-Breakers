@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour {
 
-	public Paddle paddle;
+	private Paddle paddle;
 	
 	private Vector3 paddleToBallVector; 
 	public Rigidbody2D rb;
@@ -14,6 +14,7 @@ public class Ball : MonoBehaviour {
 	
 	void Start()
 	{
+		paddle = GameObject.FindObjectOfType<Paddle>();
 		paddleToBallVector = this.transform.position - paddle.transform.position;	
 		print(paddleToBallVector);
 	}
