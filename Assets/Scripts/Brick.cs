@@ -25,7 +25,7 @@ public class Brick : MonoBehaviour {
 		print("Collision");
 		timesHit++;
 		
-		if(timesHit > maxHits)
+		if(timesHit >= maxHits)
 		{
 			SimulateWin();
 			Destroy(gameObject);
