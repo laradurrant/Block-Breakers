@@ -16,5 +16,6 @@ public class LoseCollider : MonoBehaviour {
 		print("Collision");
 		levelmanager = GameObject.FindObjectOfType<LevelManager>();
 		levelmanager.LoadLevel ("Lose Screen");
+		Brick.brickCount = 0;
 	}
 }

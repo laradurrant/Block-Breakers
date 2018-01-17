@@ -380,10 +380,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1916971248571822, guid: e29c5856d6ae4e340995d0d3b6bc12d0, type: 2}
-      propertyPath: m_Name
-      value: Paddle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e29c5856d6ae4e340995d0d3b6bc12d0, type: 2}
   m_IsPrefabParent: 0
@@ -396,11 +392,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4625818602721084, guid: f99a893412a83934c9307b3867bb61b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 10.154
       objectReference: {fileID: 0}
     - target: {fileID: 4625818602721084, guid: f99a893412a83934c9307b3867bb61b2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.1
+      value: -5.022
       objectReference: {fileID: 0}
     - target: {fileID: 4625818602721084, guid: f99a893412a83934c9307b3867bb61b2, type: 2}
       propertyPath: m_LocalPosition.z

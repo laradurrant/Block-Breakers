@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour {
 
+	public static int brickCount = 0;
+	private bool isBreakable; 
+	
+	
 	public int maxHits = 0;
 	private int timesHit;
 	private LevelManager levelmanager;
@@ -11,8 +15,16 @@ public class Brick : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		isBreakable = (this.tag == "Breakable");
 		timesHit = 0;
+
+		if(isBreakable)
+		{
+			brickCount++;
+		}
+		
 		levelmanager = GameObject.FindObjectOfType<LevelManager>();
+		Debug.Log(brickCount);
 	}
 	
 
@@ -21,15 +33,33 @@ public class Brick : MonoBehaviour {
 		print("Collision");
 		timesHit++;
 		
-		if(timesHit >= maxHits)
+		
+		if(isBreakable)
 		{
-			//SimulateWin();
-			Destroy(gameObject);
+			HandleHits();
+		}
+	}
+	
+	void HandleHits()
+	{
+						
+			if(timesHit >= maxHits)
+			{
+				//SimulateWin();
+				
+				Destroy(gameObject);
 			
-		}
-		else{
-			LoadSprites();
-		}
+				brickCount--;
+				Debug.Log(brickCount);
+				
+				if(brickCount <= 0)
+				{
+				SimulateWin();
+				}	
+			}
+			else{
+				LoadSprites();
+			}
 	}
 	
 	void LoadSprites()
