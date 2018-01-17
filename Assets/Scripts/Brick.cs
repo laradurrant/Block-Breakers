@@ -6,7 +6,7 @@ public class Brick : MonoBehaviour {
 
 	public static int brickCount = 0;
 	private bool isBreakable; 
-	
+	public AudioClip crack;
 	
 	public int maxHits = 0;
 	private int timesHit;
@@ -32,10 +32,11 @@ public class Brick : MonoBehaviour {
 	{
 		print("Collision");
 		timesHit++;
-		
+		AudioSource.PlayClipAtPoint(crack, new Vector3(5, 1, 2));
 		
 		if(isBreakable)
 		{
+			
 			HandleHits();
 		}
 	}
