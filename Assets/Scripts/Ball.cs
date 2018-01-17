@@ -23,7 +23,7 @@ public class Ball : MonoBehaviour {
 	{
 		if(!GameInSession)
 		{
-			this.transform.position = paddle.transform.position + paddleToBallVector + Vector3.right;
+			this.transform.position = paddle.transform.position + paddleToBallVector;
 		
 		
 			if(Input.GetMouseButtonUp(0))
