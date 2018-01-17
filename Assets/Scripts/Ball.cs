@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour {
 	public Rigidbody2D rb;
 	public float thrust = 10;
 	private bool GameInSession = false;
+	public AudioSource audio;
 	
 	
 	void Start()
@@ -17,6 +18,7 @@ public class Ball : MonoBehaviour {
 		paddle = GameObject.FindObjectOfType<Paddle>();
 		paddleToBallVector = this.transform.position - paddle.transform.position;	
 		print(paddleToBallVector);
+		
 	}
 	
 	void Update()
@@ -37,7 +39,7 @@ public class Ball : MonoBehaviour {
 				y = Random.Range(9f,10f);
 				
 				rb.velocity = new Vector2 (x, y);
-			
+				//audio.Play();
 			}
 		
 		}
@@ -45,4 +47,17 @@ public class Ball : MonoBehaviour {
 		
 	}
 	
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		print(collision.gameObject);
+		if(collision.gameObject.name != "Paddle")
+		{
+			audio.Play();
+		}
+		
+	}
+	
+	
 }
+
+
