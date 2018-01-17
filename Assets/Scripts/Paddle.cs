@@ -20,7 +20,7 @@ public class Paddle : MonoBehaviour {
 		paddlePosition.x = mousePos * 19f;
 		this.transform.position = paddlePosition;
 
-		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 0, 19f), -6.5f, 0);
+		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 0, 18.7f), -6.5f, 0);
 			
 
 		//debugFunctions ();
