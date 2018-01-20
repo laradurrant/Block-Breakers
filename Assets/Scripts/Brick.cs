@@ -30,9 +30,10 @@ public class Brick : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		print("Collision");
+		//print("Collision");
 		timesHit++;
-		AudioSource.PlayClipAtPoint(crack, new Vector3(5, 1, 2));
+		
+		AudioSource.PlayClipAtPoint(crack, this.transform.position);
 		
 		if(isBreakable)
 		{
@@ -55,7 +56,7 @@ public class Brick : MonoBehaviour {
 				
 				if(brickCount <= 0)
 				{
-				SimulateWin();
+					SimulateWin();
 				}	
 			}
 			else{
@@ -72,6 +73,7 @@ public class Brick : MonoBehaviour {
 	
 	void SimulateWin()
 	{
+		brickCount = 0;
 		levelmanager.LoadNextLevel();
 	}
 }

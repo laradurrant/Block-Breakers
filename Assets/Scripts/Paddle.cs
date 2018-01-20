@@ -6,29 +6,65 @@ public class Paddle : MonoBehaviour {
 
 	Vector3 paddlePosition;
 	float mousePos;
-
-	// Use this for initialization
-	void Start () {
-		
+	public bool autoPlay = false;
+	private Ball ball; 
+	
+	void Start()
+	{
+		 ball = GameObject.FindObjectOfType<Ball>();
+		 autoPlay = true;
 	}
+	
 
 	// Update is called once per frame
 	void Update () {
 
-		paddlePosition = new Vector3(0f, -6.5f, 0f);
-		mousePos = Input.mousePosition.x / Screen.width;
-		paddlePosition.x = mousePos * 19f;
-		this.transform.position = paddlePosition;
-
-		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 0, 18.7f), -6.5f, 0);
-			
+		if(!autoPlay)
+		{
+			MoveWithMouse();
+		}
+		else
+		{
+			AutoPlay();
+		}
 
 		//debugFunctions ();
 
 
 	}
 
+	void AutoPlay()
+	{
+		paddlePosition = new Vector3(0f, -6.5f, 0f);
+		Vector3 offset = new Vector3(1.0f, 0f, 0f);
+		
+		Vector3 ballPos = ball.transform.position - offset;
+		
+		
+		
+		paddlePosition.x = mousePos * 20f;
+		this.transform.position = paddlePosition + offset;
 
+		transform.position = new Vector3 (Mathf.Clamp (ballPos.x, 5.5f, 26f), -6.5f, 0);
+	}
+	
+	void MoveWithMouse()
+	{
+		
+		paddlePosition = new Vector3(10.5f, -6.5f, 0f);
+		mousePos = Input.mousePosition.x / Screen.width;
+		//float middle = Screen.width / 2f;
+		
+		
+		paddlePosition.x = mousePos * 30f + 0.5f;
+		this.transform.position = paddlePosition;
+
+		
+		transform.position = new Vector3 (Mathf.Clamp (paddlePosition.x, 5.5f, 26f), -6.5f, 0);
+	
+		debugFunctions();
+	}
+	
 	void debugFunctions()
 	{
 

@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour {
 	
 	public void LoadNextLevel()
 	{
+		Brick.brickCount = 0;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 	
