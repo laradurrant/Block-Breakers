@@ -12,7 +12,7 @@ public class Paddle : MonoBehaviour {
 	void Start()
 	{
 		 ball = GameObject.FindObjectOfType<Ball>();
-		 autoPlay = true;
+		
 	}
 	
 

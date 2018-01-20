@@ -348,6 +348,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -458,22 +463,6 @@ Prefab:
       propertyPath: m_Name
       value: 1 Hit (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 212178991457440096, guid: 11437628f0db35648ac86c4fae9c58c6,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300006, guid: d9d36e63799138144b001baf36b07233,
-        type: 3}
-    - target: {fileID: 61721207614726444, guid: 11437628f0db35648ac86c4fae9c58c6,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 61721207614726444, guid: 11437628f0db35648ac86c4fae9c58c6,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.56
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -536,6 +525,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -598,6 +592,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -660,6 +659,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -1212,6 +1216,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: d9d36e63799138144b001baf36b07233,
         type: 3}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -1366,6 +1375,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -1520,6 +1534,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114545453321664540, guid: 11437628f0db35648ac86c4fae9c58c6,
+        type: 2}
+      propertyPath: crack
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc1c6872b4567c419036ef8a3490641, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11437628f0db35648ac86c4fae9c58c6, type: 2}
   m_IsPrefabParent: 0
@@ -1586,6 +1605,11 @@ Prefab:
         type: 2}
       propertyPath: m_Size.x
       value: 1.5954208
+      objectReference: {fileID: 0}
+    - target: {fileID: 114277227176256280, guid: e29c5856d6ae4e340995d0d3b6bc12d0,
+        type: 2}
+      propertyPath: autoPlay
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e29c5856d6ae4e340995d0d3b6bc12d0, type: 2}
